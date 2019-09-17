@@ -1,5 +1,5 @@
 {
-    "name": "erre2web/socialiteproviders/esl",
+    "name": "erre2web/socialiteproviders-esl",
     "description": "ESL OAuth2 Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [{
