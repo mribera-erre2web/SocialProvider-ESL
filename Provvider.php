@@ -23,7 +23,7 @@ class Provider extends AbstractProvider
     protected function getAuthUrl($state)
     {
         return $this->buildAuthUrlFromBase(
-            'https://accoiunt.eslgaming.com/oauth2/v1/auth', $state
+            'https://account.eslgaming.com/oauth2/v1/auth', $state
         );
     }
     /**
@@ -31,7 +31,7 @@ class Provider extends AbstractProvider
      */
     protected function getTokenUrl()
     {
-        return 'https://accoiunt.eslgaming.com/oauth2/v1/token';
+        return 'https://account.eslgaming.com/oauth2/v1/token';
     }
     /**
      * {@inheritdoc}
@@ -39,7 +39,7 @@ class Provider extends AbstractProvider
     protected function getUserByToken($token)
     {
         $response = $this->getHttpClient()->get(
-            'https://accoiunt.eslgaming.com/oauth2/v1/userinfo', [
+            'https://account.eslgaming.com/oauth2/v1/userinfo', [
             'headers' => [
                 'Accept'        => 'application/json',
                 'Authorization' => 'Bearer '.$token,
