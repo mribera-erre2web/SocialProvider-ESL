@@ -12,7 +12,7 @@ class Provider extends AbstractProvider
     /**
      * {@inheritdoc}
      */
-    protected $scopes = ['basicprofile.read:fullprofile.read:gameaccounts.read:openid'];
+    protected $scopes = ['basicprofile.read fullprofile.read gameaccounts.read openid'];
     /**
      * {@inherticdoc}.
      */
