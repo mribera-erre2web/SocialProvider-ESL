@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\Esl;
+namespace Erre2Web\Esl;
 
 use Illuminate\Support\Arr;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;

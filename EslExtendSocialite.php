@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\Esl;
+namespace Erre2Web\Esl;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;
 
