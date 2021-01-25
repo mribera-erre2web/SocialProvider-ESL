@@ -14,7 +14,7 @@ class EslExtendSocialite
     public function handle(SocialiteWasCalled $socialiteWasCalled)
     {
         $socialiteWasCalled->extendSocialite(
-            'esl',  Provider
+            'esl',  Provider::class
         );
     }
 }
