@@ -1,6 +1,9 @@
 <?php
+
 namespace SocialiteProviders\Esl;
+
 use SocialiteProviders\Manager\SocialiteWasCalled;
+
 class EslExtendSocialite
 {
     /**
@@ -11,7 +14,7 @@ class EslExtendSocialite
     public function handle(SocialiteWasCalled $socialiteWasCalled)
     {
         $socialiteWasCalled->extendSocialite(
-            'esl', __NAMESPACE__.'\Provider'
+            'esl',  Provider
         );
     }
 }

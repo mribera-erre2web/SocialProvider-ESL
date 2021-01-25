@@ -1,22 +1,28 @@
 <?php
+
 namespace SocialiteProviders\Esl;
+
 use Illuminate\Support\Arr;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
 use SocialiteProviders\Manager\OAuth2\User;
+
 class Provider extends AbstractProvider
 {
     /**
      * Unique Provider Identifier.
      */
     const IDENTIFIER = 'ESL';
+
     /**
      * {@inheritdoc}
      */
     protected $scopes = ['basicprofile.read fullprofile.read gameaccounts.read openid'];
+
     /**
      * {@inherticdoc}.
      */
     protected $scopeSeparator = ' ';
+    
     /**
      * {@inheritdoc}
      */
@@ -26,6 +32,7 @@ class Provider extends AbstractProvider
             'https://account.eslgaming.com/oauth2/v1/auth', $state
         );
     }
+    
     /**
      * {@inheritdoc}
      */
@@ -33,6 +40,7 @@ class Provider extends AbstractProvider
     {
         return 'https://account.eslgaming.com/oauth2/v1/token';
     }
+    
     /**
      * {@inheritdoc}
      */
@@ -47,6 +55,7 @@ class Provider extends AbstractProvider
         ]);
         return json_decode($response->getBody()->getContents(), true);
     }
+    
     /**
      * {@inheritdoc}
      */
@@ -60,6 +69,7 @@ class Provider extends AbstractProvider
             'avatar'   => $user['picture'],
         ]);
     }
+    
     /**
      * {@inheritdoc}
      */
